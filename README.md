@@ -14,13 +14,13 @@
 
 Desenvolver uma plataforma web para listagem e visualização de pokémons, para a construção deste projeto foi usado ReactJS. Todos os dados sobre os pokémons como nome, número, tipo, imagem e entre outras coisas, foram possíveis com o uso da API REST [PokéApi](https://pokeapi.co/).
 
-Esse projeto é uma inspiração de um app mobile sobre pokémons, tal [layout](https://www.behance.net/gallery/95727849/Pokdex-App) foi criado a partir de um desafio proposto pela equipe do [umpontoseis](https://umpontoseis.com/).
+Esse projeto é uma inspiração de um app mobile sobre pokémons, tal [layout](https://www.behance.net/gallery/95727849/Pokdex-App).
 
 ### Funcionalidades
 
-- [x] **Listagem dos pokémons**: Listar os pokémons com o uso da API REST.
+- [x] **Listar pokémons**: Listar os pokémons com o uso da API REST.
 
-- [x] **Ampliar a listagem dos pokémons**: Método para adicionar mais pokémons a lista, ampliando-se a quantia de pokémons mostrada ao usuário.
+- [x] **Recarregar a listagem com mais pokémons**: Método para adicionar mais pokémons a lista, ampliando-se a quantia de pokémons mostrada ao usuário.
 
 - [x] **Buscar pokémons**: Método para filtrar os pokémons a partir do seu nome.
 
@@ -54,20 +54,14 @@ Esse projeto é uma inspiração de um app mobile sobre pokémons, tal [layout](
 
 - Criando tema global de cores com o `DefaultTheme` do [styled-components](https://www.styled-components.com/).
 
-### Notas
-
-- A listagem dos pokémons foi limitada em 700, pois a partir desse número a api apresenta alguns erros nas informações do pokémon, como imagem, dados de batalha, caracteríscas, dados sobre a evolução.
-
-- As características de batalha de cada pokémon não estão precisas, o motivo disso foi que eu não achei a base do calcúlo de cada espécie, como não existe um padrão geral e são várias espécies eu decidi limitar as informações desse campo.
-
 ## :rocket: Tecnologias
 
--  [React](https://pt-br.reactjs.org/)
--  [Styled-components](https://www.styled-components.com/)
--  [React-Icons](https://react-icons.netlify.com/)
--  [Axios](https://github.com/axios/axios)
--  [React Router](https://reactrouter.com/web/guides/quick-start)
--  [TypeScript](https://www.typescriptlang.org/)
+- [React](https://pt-br.reactjs.org/)
+- [Styled-components](https://www.styled-components.com/)
+- [React-Icons](https://react-icons.netlify.com/)
+- [Axios](https://github.com/axios/axios)
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## 📥 Instalação e execução
 
@@ -85,31 +79,6 @@ $ yarn
 $ yarn start
 
 ```
-
-## :muscle: Contribuir
-
-Faça o `fork` e clone o projeto a partir do seu usuário.
-
-```bash
-# Clonando projeto
-$ git clone https://github.com/SEU-NOME-DE-USUARIO/pokedex.git
-
-# Criando um branch
-$ git branch minha-alteracao
-
-# Acessando o novo branch
-$ git checkout -b minha-alteracao
-
-# Adicionando os arquivos alterados
-$ git add .
-
-# Criando commit e a mensagem
-$ git commit -m "Corrigindo...."
-
-# Enviando alterações para o brach
-$ git push origin minha-alteracao
-```
-Você deve navegar até o seu repositório onde fez o fork e clicar no botão *New pull request* no lado esquerdo da página.
 
 ## 📝 Licença
 

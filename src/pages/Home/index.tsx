@@ -4,7 +4,6 @@ import CardPokemon from '~/components/CardPokemon';
 import InputSearch from '~/components/InputSearch';
 
 import api from '~/services/api';
-import { Pokeball } from '~/assets/patterns';
 
 import { Container, Pokemons } from './styles';
 
@@ -69,7 +68,6 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <Pokeball />
       <h1>Pokédex</h1>
 
       <InputSearch value={pokemonSearch} onChange={setPokemonSearch} />

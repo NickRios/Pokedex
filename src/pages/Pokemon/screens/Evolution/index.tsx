@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 
-import { Pokeball } from '~/assets/patterns';
 import api from '~/services/api';
 
 import {
@@ -110,7 +109,6 @@ const Evolution: React.FC<{ name: string; color: string }> = ({
             )}
             <EvolutionPokemon>
               <EvolutionPokemonImage to={`/pokemon/${evolves.name}`}>
-                <Pokeball />
                 <img
                   src={evolves.image}
                   alt={`Imagem do pokémon ${evolves.name}`}

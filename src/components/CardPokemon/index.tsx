@@ -3,7 +3,6 @@ import { useTheme } from 'styled-components';
 
 import api from '~/services/api';
 import iconTypePokemon from '~/assets/types';
-import { Pokeball } from '~/assets/patterns';
 
 import {
   Container,
@@ -75,7 +74,6 @@ const CardPokemon: React.FC<{ name: string }> = ({ name }) => {
             ))}
           </div>
         )}
-        <Pokeball />
       </Pokemon>
       {pokemon.image && (
         <img src={pokemon.image} alt={`Imagem do pokémon ${name}`} />

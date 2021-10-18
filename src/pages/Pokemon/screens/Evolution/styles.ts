@@ -51,7 +51,7 @@ export const EvolutionPokemonImage = styled(Link)`
 
   svg {
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 0;
     height: inherit;
     width: initial;

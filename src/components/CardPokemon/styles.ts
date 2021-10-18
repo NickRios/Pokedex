@@ -51,7 +51,7 @@ export const Pokemon = styled.div`
   justify-content: center;
 
   position: relative;
-  padding-left: 30px;
+  padding-left: 60px;
 
   > svg {
     position: absolute;
@@ -80,6 +80,7 @@ export const PokemonNumber = styled.span`
   letter-spacing: 2px;
   /* O número 99 aplica uma opacidade de 60% no hex da cor */
   color: ${({ theme }) => theme.colors.text.number}99;
+  margin-bottom: 5px;
 `;
 
 export const PokemonName = styled.span`

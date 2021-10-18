@@ -5,7 +5,6 @@ import { FaChevronLeft } from 'react-icons/fa';
 
 import api from '~/services/api';
 import pokemonTypes from '~/assets/types';
-import { Pokeball } from '~/assets/patterns';
 
 import About from './screens/About';
 import Evolution from './screens/Evolution';
@@ -17,8 +16,7 @@ import {
   BackgroundNamePokemon,
   Content,
   Header,
-  PokemonLoader,
-  // PokemonCircle,
+  PokemonContainer,
   PokemonNumber,
   PokemonName,
   PokemonType,
@@ -141,13 +139,12 @@ const Pokemon: React.FC = () => {
       <Content>
         <Header>
           <img src={pokemon.image} alt={`Imagem do pokémon ${name}`} />
-          <PokemonLoader
+          <PokemonContainer
             colorBackground={colors.backgroundType[backgroundColor]}
-            colorType="rgba(255,255,255,0.6)"
+            colorType="transparent"
           >
             <span />
-          </PokemonLoader>
-          {/* <PokemonCircle color={colors.backgroundType[backgroundColor]} /> */}
+          </PokemonContainer>
           <div>
             <PokemonNumber>{pokemon.number}</PokemonNumber>
             <PokemonName>{name}</PokemonName>
@@ -172,7 +169,7 @@ const Pokemon: React.FC = () => {
               active={nameSection === nameSectionActive}
             >
               {nameSection}
-              {nameSection === nameSectionActive && <Pokeball />}
+              {nameSection === nameSectionActive}
             </SectionsNameButton>
           ))}
         </SectionsName>

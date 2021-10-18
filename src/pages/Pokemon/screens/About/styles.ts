@@ -34,7 +34,6 @@ export const SectionAboutContent = styled.div`
   display: flex;
   align-items: stretch;
   justify-content: space-evenly;
-  margin-top: 20px;
 
   div {
     display: flex;

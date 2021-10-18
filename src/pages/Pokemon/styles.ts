@@ -117,39 +117,12 @@ export const Header = styled.div`
   `};
 `;
 
-// export const PokemonCircle = styled.span<ElementColorProps>`
-//   z-index: 1;
-//   /* position: absolute;
-//   top: 0;
-//   left: 0; */
-//   height: 350px;
-//   width: 350px;
-
-//   border: double 10px transparent;
-//   border-radius: 50%;
-//   background-image: ${props =>
-//     `linear-gradient(${props.color}, ${props.color}), linear-gradient(160deg, ${props.color} 30%, rgba(255, 255, 255, 0.6) 100%)`};
-//   background-origin: border-box;
-//   background-clip: content-box, border-box;
-//   animation: animate 3s ease infinite;
-//   /* transform: rotate(180deg); */
-
-//   @keyframes animate {
-//     0% {
-//       transform: rotate(240deg);
-//     }
-//     100% {
-//       transform: rotate(600deg);
-//     }
-//   }
-// `;
-
-interface PokemonLoaderProps {
+interface PokemonContainerProps {
   colorType: string;
   colorBackground: string;
 }
 
-export const PokemonLoader = styled.div<PokemonLoaderProps>`
+export const PokemonContainer = styled.div<PokemonContainerProps>`
   position: relative;
   z-index: 1;
 
@@ -162,49 +135,6 @@ export const PokemonLoader = styled.div<PokemonLoaderProps>`
     width: 180px;
     border-radius: 80px;
   `};
-
-  animation: animate 3s ease infinite;
-
-  @keyframes animate {
-    0% {
-      transform: rotate(240deg);
-    }
-    100% {
-      transform: rotate(600deg);
-    }
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: ${props => `linear-gradient(
-      to top,
-      transparent,
-      ${props.colorType}
-    )`};
-    background-size: 175px 315px;
-    background-repeat: no-repeat;
-    border-top-left-radius: 175px;
-    border-bottom-left-radius: 175px;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 1px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 9px;
-    height: 9px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    z-index: 30;
-    box-shadow: 0px 0px 40px 6px #fff;
-  }
 
   span {
     position: absolute;
