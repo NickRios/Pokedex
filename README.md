@@ -6,10 +6,6 @@
   Plataforma para listagem de pokémons
 </p>
 
-<p align="center">
-  <img alt="Layout da aplicação" width="100%" src="./.github/screenshot.png" />
-</p>
-
 ## 💻 Projeto
 
 Desenvolver uma plataforma web para listagem e visualização de pokémons, para a construção deste projeto foi usado ReactJS. Todos os dados sobre os pokémons como nome, número, tipo, imagem e entre outras coisas, foram possíveis com o uso da API REST [PokéApi](https://pokeapi.co/).
